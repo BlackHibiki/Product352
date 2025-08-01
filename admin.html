@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ระบบจัดการสินค้า - Admin</title>
+  <style>
+    body { font-family: 'Prompt', sans-serif; background-color: #f5f5f5; margin: 0; padding: 0; }
+    header, footer { background-color: #14532d; color: white; text-align: center; padding: 10px 0; }
+    header img { height: 50px; vertical-align: middle; margin-right: 10px; }
+    h1 { color: #14532d; text-align: center; padding: 20px 0; }
+    form { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
+    label { display: block; margin: 10px 0 5px; }
+    input, select, textarea { width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 4px; border: 1px solid #ccc; }
+    button { background-color: #2ecc71; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background-color: #27ae60; }
+    .nav { text-align: center; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="โลโก้">
+    ระบบจัดการของที่ระลึก - ผู้ดูแลระบบ
+  </header>
+  <div class="nav">
+    <a href="#customer" onclick="location.href='customer.html'">
+      <button>ไปยังหน้าลูกค้า</button>
+    </a>
+  </div>
+  <h1>ระบบจัดการสินค้า (Admin)</h1>
+  <form>
+    <h3>เสื้อ</h3>
+    <label>สี</label><input type="text" name="shirtColor">
+    <label>ขนาด</label><input type="text" name="shirtSize">
+    <label>รูปภาพ</label><input type="file" name="shirtImage">
+    <label>ราคา</label><input type="number" name="shirtPrice">
+
+    <h3>กระเป๋า</h3>
+    <label>ชื่อสินค้า</label><input type="text" name="bagName">
+    <label>รูปภาพ</label><input type="file" name="bagImage">
+    <label>ราคา</label><input type="number" name="bagPrice">
+
+    <h3>ของที่ระลึกอื่นๆ</h3>
+    <label>หมวก, ร่ม, เข็มกลัด, สมุด, ปากกา</label>
+    <textarea name="otherSouvenirs" rows="4" placeholder="รายละเอียดสินค้าอื่นๆ..."></textarea>
+
+    <button type="submit">บันทึกสินค้า</button>
+  </form>
+  <footer>
+    &copy; 2025 สาขาวิชาวิทยาการคอมพิวเตอร์ - งานของที่ระลึกครบรอบ 30 ปี
+  </footer>
+</body>
+</html>
